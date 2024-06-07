@@ -18,6 +18,6 @@
     pip install -r requirements.txt
     ```
 
-4. Run the web.py server
+4. Run the web.py
 
     
