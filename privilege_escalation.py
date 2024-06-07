@@ -41,9 +41,6 @@ def update_user():
     merged_config = merge(user_dict, user_config)
     user.__dict__.update(merged_config)
 
-    # Re-initializing the user object to trigger any changes
-    user.__class__ = Admin
-    user.__init__(user.name)
 
     return jsonify({"username": user.name, "role": user.role})
 

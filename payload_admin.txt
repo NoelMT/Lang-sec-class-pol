@@ -1,8 +1,6 @@
 curl -X POST http://127.0.0.1:5000/update_user -H "Content-Type: application/json" -d '{
-"username": "bob",
-"config": {
-"class": {
-"init": "lambda self, name: setattr(self, "role", "admin")"
-}
-}
+    "username": "bob",
+    "config": {
+        "role": "admin"
+    }
 }'
